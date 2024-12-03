@@ -65,6 +65,8 @@ graphs = {
 # 대시보드 생성
 app = Dash(__name__)
 
+server = app.server
+
 app.layout = html.Div([
     html.H1("통행량 비교 대시보드", style={'textAlign': 'center'}),
     dcc.Dropdown(
